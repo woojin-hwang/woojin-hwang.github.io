@@ -11,7 +11,7 @@ tag:
 comments: false
 ---
 
-<center>clipse 가 아닌, IntelliJ IDEA 로 해보는 Java 와 Tomcat 의 Servlet 개발환경 구축하기</center>
+<center>clipse 가 아닌, IntelliJ IDEA 로 해보는 Java 와 Tomcat 의 Servlet 개발환경 구축하기<br></center>
 
 `Java` 와 `Tomcat` 을 통한 `Servlet` 개발 환경을 구축할 때는 보통 `Eclipse` 를 많이 사용합니다.
 

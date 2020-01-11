@@ -12,7 +12,7 @@ project: true
 comments: false
 ---
 
-<center>처음으로 만든 크롬 웹 확장 프로그램 개발과 그 실패에 대하여</center>
+<center>처음으로 만든 크롬 웹 확장 프로그램 개발과 그 실패에 대하여<br></center>
 
 우연히 [네이버 웨일 확장앱 콘테스트 2019](https://whale.naver.com/contest/) 에 대해 들었고, 아이디어만 가지고 별 생각 없이 지원했습니다.
 
