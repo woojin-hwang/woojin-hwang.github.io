@@ -131,7 +131,7 @@ iPad 등의 기기를 위해 2x 와 3x 크기를 추가하도록 하겠습니다
   <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_apple_group.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_apple_group.png"></a>
 </figure>
 
-> 주의해야 할 점은, 여기서 만든 폴더는 확장자가 없는 파일시스템상의 폴더이며, 에셋 카탈로그 폴더와는 다릅니다.
+> 여기서 만든 폴더는 확장자가 없는 파일시스템상의 폴더이며, 에셋 카탈로그 폴더와는 다릅니다. 주의하시기 바랍니다.
 
 ## 앱 시닝(App Thining)
 
