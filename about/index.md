@@ -1,37 +1,31 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About me
+tags: []
+date: 2019-01-20
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center>황우진 블로그<br></center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Bio
 
-## Preview
+[2019 상반기 경희SW봉사단 활동(엔트리 프로그래밍)](http://swedu.khu.ac.kr/html_2018/05/03.php)
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+[2019 웨일 확장프로그램 공모전 참가](https://blog.naver.com/whaleteam/221651840602) [후기](https://woojin-hwang.github.io/whaletime/)
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+[2019 하계 해외 전공연수 프로그램 참가](http://ce.khu.ac.kr/?hCode=BOARD&page=view&idx=1317&bo_idx=2&hCode=BOARD&bo_idx=2&sfl=title&stx=연수)
 
-## Getting Started
+[2019 하반기 경희SW봉사단 활동(엔트리 프로그래밍)](http://swedu.khu.ac.kr/html_2018/05/03.php)
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+경희대학교 컴퓨터공학과 재학중
+
+## Project
+
+[생산성을 위한 크롬 웹 확장 프로그램, whaletime](https://woojin-hwang.github.io/whaletime/){: .btn}
+
+여름과 겨울의 온도 연관성 분석, hot2cold
+
+## Reference
+
+[Jekyll](https://jekyllrb.com){: .btn} [Moon](https://github.com/TaylanTatli/Moon){: .btn}
