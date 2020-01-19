@@ -82,7 +82,7 @@ Xcode 에서는 이를 해결하기 위해 에셋(Asset) 을 사용합니다. �
 가장 오른쪽 부분은 속성(Attribute) 과 속성 값(Value) 을 의미합니다. 선택된 에셋 파일의 속성을 나타냅니다.
 
 <figure>
-  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog.png"></a>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_attribute.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_attribute.png"></a>
 </figure>
 
 ## 에셋 카탈로그의 종류
