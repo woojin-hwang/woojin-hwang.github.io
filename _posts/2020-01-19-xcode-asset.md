@@ -33,7 +33,57 @@ Xcode 에서는 이를 해결하기 위해 에셋(Asset) 을 사용합니다. �
 
 > 왼쪽에 보이는 Assets.xcassets 폴더가 바로 에셋 카탈로그입니다. 아직은 에셋이 없는 상태입니다.
 
+에셋 카탈로그는 3가지로 구분됩니다. 바로 *에셋 카탈로그 폴더, JSON 파일, 컨텐츠 파일* 입니다.
+
+**에셋 카탈로그 폴터** 는 다른 폴더나 파일들을 포함할 수 있는 점에서 파일시스템 상의 폴더와 비슷합니다. 그러나 에셋 카탈로그 폴더는 에셋 타입의 확장자를 가지고 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/appiconset.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/appiconset.png"></a>
+</figure>
+
+> 확장자 .appiconset 을 가진 에셋 카탈로그 폴더입니다.
+
+**JSON 파일** 은 해당 속성에 대한 정보를 포함하고 있는 JSON 파일입니다.
+
+**컨텐츠 파일** 은 이미지, 음악 등의 리소스 파일을 말합니다.
+
 에셋 카탈로그에 대해서 더 많은 것들을 알고 싶으시다면 [애플 공식 문서](https://help.apple.com/xcode/mac/current/#/dev10510b1f7) 를 참조하시기 바랍니다.
+
+## 에셋 카탈로그의 기본 구성
+
+---
+
+에셋 카탈로그의 기본적인 구성에 대해 알아보도록 하겠습니다. 아래는 기본 화면입니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_base.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_base.png"></a>
+</figure>
+
+가장 왼쪽 부분은 프로젝트의 디렉토리입니다. 이 중에서 Assets.xcassets 폴더가 바로 에셋 카탈로그입니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_xcassets.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_xcassets.png"></a>
+</figure>
+
+그 옆은 에셋 카탈로그 디렉토리입니다. 에셋 카탈로그 폴더, json 파일, 컨텐츠 파일들이 위치하게 됩니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_dir.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_dir.png"></a>
+</figure>
+
+중앙의 부분은 에셋 파일들을 나타냅니다. 가장 왼쪽 위에 이름이 표시되어 있습니다. 이 에셋 파일들은 iPhone, iPad, App Store 등 집합을 가지게 되는데 이 집합을 에셋 베리에이션(Asset Variation) 이라고 합니다. 같은 집합에는 모두 같은 속성 값이 적용됩니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_variation.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog_variation.png"></a>
+</figure>
+
+> 위 에셋의 이름은 Appicon 입니다. 그리고 iPhone Notification 조각의 에셋 파일들은 모두 같은 속성 값을 가지게 됩니다.
+
+가장 오른쪽 부분은 속성(Attribute) 과 속성 값(Value) 을 의미합니다. 선택된 에셋 파일의 속성을 나타냅니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/asset_catalog.png"></a>
+</figure>
 
 ## 에셋 카탈로그의 종류
 
@@ -66,7 +116,7 @@ Xcode 에서는 이를 해결하기 위해 에셋(Asset) 을 사용합니다. �
 또는 화면 하단에 **+** 버튼을 눌러 New Image Set 을 클릭할 수도 있습니다.
 
 <figure>
-  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_new_image_set.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_new_image_set"></a>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_new_image_set.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_new_image_set.png"></a>
 </figure>
 
 iPad 등의 기기를 위해 2x 와 3x 크기를 추가하도록 하겠습니다. 이 방법도 간단합니다. 사과를 복사해서 붙여넣으면 다음과 같이 됩니다.
@@ -75,11 +125,13 @@ iPad 등의 기기를 위해 2x 와 3x 크기를 추가하도록 하겠습니다
   <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_apple3.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_apple3.png"></a>
 </figure>
 
-폴더를 만들어 그룹별로 관리할 수도 있습니다.
+그룹 폴더를 만들어 관리할 수도 있습니다.
 
 <figure>
   <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_apple_group.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-asset/xcode_apple_group.png"></a>
 </figure>
+
+> 주의해야 할 점은, 여기서 만든 폴더는 확장자가 없는 파일시스템상의 폴더이며, 에셋 카탈로그 폴더와는 다릅니다.
 
 ## 앱 시닝(App Thining)
 
