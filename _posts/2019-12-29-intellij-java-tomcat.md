@@ -155,5 +155,3 @@ Application context 가 untitled_war_exploded 이면
 </figure>
 
 > localhost:8080/content/MyServlet
-
-[#intellij-idea](https://woojin-hwang.github.io/tags/#intellij-idea) [#java](https://woojin-hwang.github.io/tags/#java) [#tomcat](https://woojin-hwang.github.io/tags/#tomcat) [#servlet](https://woojin-hwang.github.io/tags/#servlet)

@@ -140,5 +140,3 @@ z-index 를 조작해서 억지로 배치를 한 모습이 보입니다.
 ## 정리
 
 정말 많은 것들을 느낄 수 있었던 경험이었습니다.
-
-[#html](https://woojin-hwang.github.io/tags/#html) [#css](https://woojin-hwang.github.io/tags/#css) [#javascript](https://woojin-hwang.github.io/tags/#javascript) [#chrome-extension](https://woojin-hwang.github.io/tags/#chrome-extension)
