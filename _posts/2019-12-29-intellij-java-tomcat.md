@@ -1,17 +1,15 @@
 ---
 layout: post
-title:  "IntelliJ IDEA 로 Java + Tomcat 서블릿 개발환경 만들기"
+title:  "Eclipse 가 아닌, IntelliJ IDEA 로 해보는 Java 와 Tomcat 의 Servlet 개발환경 구축하기"
 date:   2019-12-29
-excerpt: "Eclipse 가 아닌, IntelliJ IDEA 로 해보는 Java 와 Tomcat 의 Servlet 개발환경 구축하기"
+excerpt: "#intellij-idea #java #tomcat #servlet"
 tag:
-- IntelliJ IDEA
-- Java
-- Tomcat
-- Servlet
+- intellij-idea
+- java
+- tomcat
+- servlet
 comments: false
 ---
-
-<center>clipse 가 아닌, IntelliJ IDEA 로 해보는 Java 와 Tomcat 의 Servlet 개발환경 구축하기<br></center>
 
 `Java` 와 `Tomcat` 을 통한 `Servlet` 개발 환경을 구축할 때는 보통 `Eclipse` 를 많이 사용합니다.
 
@@ -157,3 +155,5 @@ Application context 가 untitled_war_exploded 이면
 </figure>
 
 > localhost:8080/content/MyServlet
+
+[#intellij-idea](https://woojin-hwang.github.io/tags/#intellij-idea) [#java](https://woojin-hwang.github.io/tags/#java) [#tomcat](https://woojin-hwang.github.io/tags/#tomcat) [#servlet](https://woojin-hwang.github.io/tags/#servlet)

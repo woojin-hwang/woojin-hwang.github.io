@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "whaletime"
+title:  "방문기록 관리 앱, whaletime"
 date:   2020-01-01
-excerpt: "처음으로 만든 크롬 웹 확장 프로그램 개발과 그 실패에 대하여"
+excerpt: "#html #css #javascript #chrome-extension"
 tag:
-- HTML
-- CSS
-- Javascript
-- Chrome Web Extension
+- html
+- css
+- javascript
+- chrome-extension
 project: true
 comments: false
 ---
 
-<center>처음으로 만든 크롬 웹 확장 프로그램 개발과 그 실패에 대하여<br></center>
+제가 처음으로 만든 크롬 웹 확장 프로그램 개발 과정과 그 실패에 대해서 이야기하려고 합니다.
 
 우연히 [네이버 웨일 확장앱 콘테스트 2019](https://whale.naver.com/contest/) 에 대해 들었고, 아이디어만 가지고 별 생각 없이 지원했습니다.
 
@@ -22,7 +22,7 @@ comments: false
 
 문제는 제가 당시에 HTML/CSS/Javascript 를 모르는 상태였다는 것이었습니다.
 
-> ???????
+> ??
 
 HTML/CSS/Javascript 에 대해 하나도 모르는 데 5일 만에 그럴듯한 크롬 웹 확장 프로그램을 만드는 것이 가능할까?
 
@@ -64,8 +64,6 @@ Google 과 StackOverflow 는 이 모든것을 가능하게 했습니다.
 
 그래서 날짜값을 임시 브라우저 공간에 저장한 후 좌우 화살표를 누르면 값 변경을 해서 새로고침하는 방식으로 구현했습니다.
 
-> ... 네? 세상에나
-
 대충 이런 식으로 작동하게 만들었습니다.
 
 {% highlight javascript %}
@@ -73,7 +71,7 @@ chrome.storage.local.set(items, function() {});
 location.reload(true);
 {% endhighlight %}
 
-> ... 맙소사
+> 그래서 날짜를 변경할때마다 페이지가 계속 새로고침됩니다. 와우.
 
 ## 해당 기술에 경험이 있는가?
 
@@ -142,3 +140,5 @@ z-index 를 조작해서 억지로 배치를 한 모습이 보입니다.
 ## 정리
 
 정말 많은 것들을 느낄 수 있었던 경험이었습니다.
+
+[#html](https://woojin-hwang.github.io/tags/#html) [#css](https://woojin-hwang.github.io/tags/#css) [#javascript](https://woojin-hwang.github.io/tags/#javascript) [#chrome-extension](https://woojin-hwang.github.io/tags/#chrome-extension)
