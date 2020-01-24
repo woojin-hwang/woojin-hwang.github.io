@@ -22,7 +22,7 @@ project: true
 평소에 부스트코스 강좌들을 듣던 중 우연히 [부스트코스 대학생 서포터즈 Booster 2기](https://m.post.naver.com/viewer/postView.nhn?volumeNo=27310031&memberNo=34635212)에 대해 듣게 되었고,
 
 <figure>
-  <a href="https://m.post.naver.com/viewer/postView.nhn?volumeNo=27310031&memberNo=34635212"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/booster"></a>
+  <a href="https://m.post.naver.com/viewer/postView.nhn?volumeNo=27310031&memberNo=34635212"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/booster.jpg"></a>
 </figure>
 
 > 선발되어 활동하게 되었습니다.
