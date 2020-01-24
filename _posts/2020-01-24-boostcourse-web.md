@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "[부스트코스]웹 프로그래밍 기록"
+date:   2020-01-24
+excerpt: "#boostcourse #web"
+tag:
+- boostcourse
+- web
+comments: false
+project: true
+---
+
+[부스트코스](https://www.edwith.org/boost-course/intro)는 웹, 모바일, 인공지능 등을 배울 수 있으며, 직접 만든 코드에 대해 리뷰도 받을 수 있는 서비스입니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/boostcourse.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/boostcourse.png"></a>
+</figure>
+
+> 수준급의 무료 강좌를 제공합니다. 게다가 한글 강좌입니다.
+
+이 포스트에서는 [[부스트코스]웹 프로그래밍](https://www.edwith.org/boostcourse-web) 에 대해 내용정리, 참고할만한 사이트, 코드 등을 다룰 예정입니다.
+
+목차는 다음과 같습니다.
+
+---
