@@ -24,6 +24,8 @@ comments: false
 
 [[크롬 확장프로그램] 방문기록 관리 앱, whaletime](https://woojin-hwang.github.io/whaletime/)
 
-## 레퍼런스
+[[쥬피터 노트북] 파이썬 데이터분석, hot2cold](https://woojin-hwang.github.io/hot2cold/)
+
+## 참조
 
 [Jekyll](https://jekyllrb.com){: .btn} [Moon](https://github.com/TaylanTatli/Moon){: .btn}

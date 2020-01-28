@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[부스트코스]iOS 프로그래밍 Booster 2기 활동 정리"
-date:   2020-01-24
+date:   2020-01-28
 excerpt: "#boostcourse #booster #ios"
 tag:
 - boostcourse
