@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[부스트코스]웹 프로그래밍 기록"
+title:  "[부스트코스]웹 프로그래밍 정리"
 date:   2020-01-24
 excerpt: "#boostcourse #web"
 tag:

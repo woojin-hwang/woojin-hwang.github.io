@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[부스트코스]iOS 프로그래밍 Booster 2기 활동 기록"
+title:  "[부스트코스]iOS 프로그래밍 Booster 2기 활동 정리"
 date:   2020-01-24
 excerpt: "#boostcourse #booster #ios"
 tag:
@@ -25,7 +25,7 @@ project: true
   <a href="https://m.post.naver.com/viewer/postView.nhn?volumeNo=27310031&memberNo=34635212"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/booster.jpg"></a>
 </figure>
 
-> 선발되어 활동하게 되었습니다.
+운 좋게 선발되어 활동하게 되었습니다.
 
 이 포스트에서는 [[부스트코스]iOS 프로그래밍](https://www.edwith.org/boostcourse-ios) 에 대해 내용정리, 참고할만한 사이트, 코드 등을 다룰 예정입니다.
 
@@ -33,8 +33,16 @@ project: true
 
 ---
 
-[프로그래밍 언어 Swift 기초 다지기](https://woojin-hwang.github.io/swift/)
+## [부스트코스]iOS 프로그래밍 글
+
+---
 
 [xcode 설치하고 둘러보기](https://woojin-hwang.github.io/xcode/)
 
 [Xcode 의 에셋 카탈로그(Asset Catalog) 와 앱 시닝(App Thining) 톺아보기](https://woojin-hwang.github.io/xcode-asset/)
+
+## 참고할만한 글
+
+---
+
+[프로그래밍 언어 Swift 기초 다지기](https://woojin-hwang.github.io/swift/)
