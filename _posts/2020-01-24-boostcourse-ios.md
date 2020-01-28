@@ -33,7 +33,13 @@ project: true
 
 ---
 
-## [부스트코스]iOS 프로그래밍 글
+## Swift
+
+---
+
+[프로그래밍 언어 Swift 기초 다지기](https://woojin-hwang.github.io/swift/)
+
+## Xcode
 
 ---
 
@@ -41,8 +47,8 @@ project: true
 
 [Xcode 의 에셋 카탈로그(Asset Catalog) 와 앱 시닝(App Thining) 톺아보기](https://woojin-hwang.github.io/xcode-asset/)
 
-## 참고할만한 글
-
 ---
 
-[프로그래밍 언어 Swift 기초 다지기](https://woojin-hwang.github.io/swift/)
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.png"></a>
+</figure>
