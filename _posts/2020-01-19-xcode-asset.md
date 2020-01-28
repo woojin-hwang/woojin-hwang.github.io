@@ -10,7 +10,9 @@ tag:
 comments: false
 ---
 
-[[부스트코스 iOS 프로그래밍 강좌]프로젝트에 이미지 추가하기](https://www.edwith.org/boostcourse-ios/lecture/16842/)에 대한 정리글입니다.
+---
+
+[[부스트코스] iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
 
 ## 에셋 카탈로그(Asset Catalog)란?
 

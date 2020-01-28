@@ -11,6 +11,8 @@ comments: false
 project: true
 ---
 
+---
+
 [부스트코스](https://www.edwith.org/boost-course/intro)는 웹, 모바일, 인공지능 등을 배울 수 있으며, 직접 만든 코드에 대해 리뷰도 받을 수 있는 서비스입니다.
 
 <figure>
@@ -28,8 +30,6 @@ project: true
 운 좋게 선발되어 활동하게 되었습니다.
 
 이 포스트에서는 [[부스트코스]iOS 프로그래밍](https://www.edwith.org/boostcourse-ios) 에 대해 내용정리, 참고할만한 사이트, 코드 등을 다룰 예정입니다.
-
-목차는 다음과 같습니다.
 
 ---
 
