@@ -52,3 +52,4 @@ project: true
 <figure>
   <a href="https://woojin-hwang.github.io/boostcourse-ios/"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.jpg"></a>
 </figure>
+<center>클릭하면 처음 포스트로 돌아갑니다.</center>
