@@ -37,7 +37,9 @@ project: true
 
 ---
 
-[프로그래밍 언어 Swift 기초 다지기](https://woojin-hwang.github.io/swift/)
+[프로그래밍 언어 Swift 기초 다지기 1](https://woojin-hwang.github.io/swift1/)
+
+[프로그래밍 언어 Swift 기초 다지기 2](https://woojin-hwang.github.io/swift2/)
 
 ## Xcode
 
