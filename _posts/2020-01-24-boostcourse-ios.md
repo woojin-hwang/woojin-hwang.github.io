@@ -47,6 +47,8 @@ project: true
 
 [Xcode 의 에셋 카탈로그(Asset Catalog) 와 앱 시닝(App Thining) 알아보기](https://woojin-hwang.github.io/xcode-asset/)
 
+[Xcode 의 인터페이스 구성하기](https://woojin-hwang.github.io/xcode-interface/)
+
 ---
 
 <figure>
