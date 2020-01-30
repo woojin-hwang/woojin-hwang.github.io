@@ -152,10 +152,16 @@ View Controller 를 *ctrl 을 누르고 클릭*하면 다음과 같은 창이 �
   <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-interface/connections_inspector.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-interface/connections_inspector.png"></a>
 </figure>
 
-마찬가지로 원하는 인스턴스 프로퍼티와 인터페이스를 마우스로 끌어서 연결하면 되겠습니다.
+위와 마찬가지로 원하는 인스턴스 프로퍼티와 인터페이스를 마우스로 끌어서 연결하면 되겠습니다.
 
 <figure>
   <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-interface/connections_inspector2.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-interface/connections_inspector2.png"></a>
+</figure>
+
+성공적으로 연결된 인스턴스 프로퍼티는 다음과 같이 속이 찬 동그라미로 표시됩니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-interface/iboutlet2.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-interface/iboutlet2.png"></a>
 </figure>
 
 인스턴스 프로퍼티와 인터페이스를 연결할 때 주의해야 할 것이 있습니다. 만약 연결하고 난 후 인스턴스 프로퍼티의 이름을 변경하게 되면 당연히 에러가 발생합니다. 이 경우 잘못된 연결을 삭제하고 새로 연결을 해 주어야 에러가 발생하지 않습니다.
