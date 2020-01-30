@@ -253,6 +253,10 @@ View Controller 를 *ctrl 을 누르고 클릭*하면 다음과 같은 창이 �
 
 ---
 
+[[다음 포스트]Xcode 의 UI 중 버튼, 레이블 그리고 슬라이더 알아보기](https://woojin-hwang.github.io/xcode-ui/)
+
+---
+
 <figure>
   <a href="https://woojin-hwang.github.io/boostcourse-ios/"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.jpg"></a>
 </figure>
