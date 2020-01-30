@@ -11,8 +11,6 @@ comments: false
 project: true
 ---
 
----
-
 [부스트코스](https://www.edwith.org/boost-course/intro)는 웹, 모바일, 인공지능 등을 배울 수 있으며, 직접 만든 코드에 대해 리뷰도 받을 수 있는 서비스입니다.
 
 <figure>

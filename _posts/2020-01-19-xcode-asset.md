@@ -12,6 +12,10 @@ comments: false
 
 [[부스트코스] iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
 
+[[이전 포스트]xcode 설치하고 둘러보기](https://woojin-hwang.github.io/xcode/)
+
+---
+
 ## 에셋 카탈로그(Asset Catalog)란?
 
 ---
@@ -143,6 +147,10 @@ iPad 등의 기기를 위해 2x 와 3x 크기를 추가하도록 하겠습니다
 > 만약 새로운 아키텍쳐가 나오더라도 애플이 알아서 재컴파일을 하면 새로운 버전을 만들 필요가 없겠죠?
 
 **주문형-리소스**는 굳이 어플리케이션에 포함될 필요 없는 이미지나 음악 파일에 태그를 달아, 나중에 애플 서버에서 해당 파일을 요청할 때 받을 수 있도록 하는 방식입니다. 어플리케이션 사이즈를 줄일 수 있습니다.
+
+---
+
+[[다음 포스트]Xcode 의 인터페이스 구성하기](https://woojin-hwang.github.io/xcode-interface/)
 
 ---
 
