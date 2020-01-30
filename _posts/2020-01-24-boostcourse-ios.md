@@ -49,6 +49,8 @@ project: true
 
 [Xcode 의 인터페이스 구성하기](https://woojin-hwang.github.io/xcode-interface/)
 
+[Xcode 의 UI 중 버튼, 레이블 그리고 슬라이더 알아보기](https://woojin-hwang.github.io/xcode-ui/)
+
 ---
 
 <figure>
