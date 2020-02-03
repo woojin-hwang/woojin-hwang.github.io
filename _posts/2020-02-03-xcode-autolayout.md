@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Booster 2기] 오토레이아웃이 무엇인지 알아보고 직접 코드로 구현해보기"
+title:  "[Booster 2기] 오토레이아웃이 무엇인지 알아보고 직접 코드 없이, 또는 코드를 사용해서 구현해보기"
 date:   2020-01-31
 excerpt: "#boostcourse #booster #xcode"
 tag:
@@ -91,7 +91,79 @@ B.Leading = 1.0 * A.Trailing + 8.0
 
 ---
 
-이제 인터페이스 빌더를 통해 직접 오토레이아웃을 구현해보도록 하겠습니다.
+이제 인터페이스 빌더를 통해 직접 오토레이아웃을 구현해보도록 하겠습니다. 인터페이스 빌더에서 오토레이아웃을 구현하는 방법에는 크게 3가지가 존재합니다.
+
+### 인터페이스 빌더가 알아서 제약 생성하도록 하기
+
+가장 간단하고 쉬운 방법은 인터페이스 빌더가 알아서 제약을 생성하도록 하는 것입니다. 사용자가 기본적인 뷰를 설정하기만 하면 인터페이스 빌더는 그에 최적화된 제약을 스스로 판단해서 생성하게 됩니다.
+
+상단 탭에서 **Editor -> Resolve Auto Layout Issues** 에서 원하는 제약을 추가할 수 있습니다. **Reset to Suggested Constraint** 를 누르면 인터페이스 빌더가 제안하는 제약을 추가합니다. **Add Missing Constrainrs** 를 눌러 인터페이스 빌더가 생각하기에 뷰에 빠진 제약을 추가할 수도 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/resolve_autolayout.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/resolve_autolayout.png"></a>
+</figure>
+
+> 상단 탭의 Editor 메뉴 말고 다른 방법으로 제약을 만들수도 있습니다. 이에 대해서는 아래에서 설명하겠습니다.
+
+사용하기 매우 간단하지만 이는 장점이 되기도 하고 단점이 되기도 합니다. 즉 간단히 오토레이아웃을 생성하기에는 적합하지만, 복잡한 레이아웃이나 혹은 개발자가 원하는 특별한 레이아웃이 있다면 이 방법으로 구현하기는 어렵습니다.
+
+### ctrl 클릭으로 제약 생성하기
+
+다음은 ctrl 클릭으로 오토레이아웃을 생성하는 방법입니다. 일반적으로 두개의 뷰 사이의 관계를 만들 때 사용합니다. 만약 버튼과 레이블 사이의 제약을 생성하고 싶다면, 다음과 같이 버튼을 **ctrl 클릭** 한 다음 드래그해서 레이블 위에서 놓으면 됩니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/ctrl_autolayout.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/ctrl_autolayout.png"></a>
+</figure>
+
+그러면 다음과 같은 창이 나타납니다. 이 창은 생성가능한 제약들을 보여줍니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/ctrl_autolayout2.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/ctrl_autolayout2.png"></a>
+</figure>
+
+> 원하는 제약을 선택하면 되겠습니다.
+
+### 툴바를 사용해서 제약 생성하기
+
+툴바를 사용해서 제약을 생성할 수도 있습니다. 툴바는 에디터 영역의 제일 오른쪽 아래 부분에 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/toolbar.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/toolbar.png"></a>
+</figure>
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/toolbar2.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/toolbar2.png"></a>
+</figure>
+
+하나씩 알아보도록 하겠습니다.
+
+첫 번째 도구는 **정렬(Align)** 입니다. 가로 정렬과 세로 정렬, 그리고 그 외의 여러 정렬들을 사용할 수 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/align.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/align.png"></a>
+</figure>
+
+> 정렬 도구 옆에 새로고침 모양의 도구는 Update Frame 으로, 레이아웃을 제약에 맞게 업데이트합니다.
+
+두 번째 도구는 **핀(Pin)** 입니다. 뷰의 위치나 크기를 결정합니다. 고정 값으로 설정하거나 화면 크기에 맞춘 비율로 설정할 수도 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/pin.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/pin.png"></a>
+</figure>
+
+세 번째 도구는 **리졸브(Resolve)** 입니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/resolve.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/resolve.png"></a>
+</figure>
+
+잘 보면 알겠지만, **인터페이스 빌더가 알아서 제약 설정하도록 하기** 에서 사용한 메뉴가 동일합니다.
+
+마지막 도구는 **스택(Stack)** 입니다. 이 도구는 스택 뷰를 빠르게 생성하거나 크기를 조정할 수 있도록 도와줍니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/stack.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/stack.png"></a>
+</figure>
 
 ## 코드로 오토레이아웃 구현하기
 
