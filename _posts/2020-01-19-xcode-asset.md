@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Xcode 의 에셋 카탈로그(Asset Catalog) 와 앱 시닝(App Thining) 알아보기"
+title:  "[Booster 2기] Xcode 의 에셋 카탈로그(Asset Catalog) 와 앱 시닝(App Thining) 알아보기"
 date:   2020-01-28
 excerpt: "#boostcourse #booster #xcode"
 tag:
@@ -10,7 +10,9 @@ tag:
 comments: false
 ---
 
-[[부스트코스] iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
+[[부스트코스]iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
+
+[[부스트코스]iOS 프로그래밍 Booster 2기 활동](https://woojin-hwang.github.io/boostcourse-ios/) 글입니다.
 
 [[이전 포스트]xcode 설치하고 둘러보기](https://woojin-hwang.github.io/xcode/)
 

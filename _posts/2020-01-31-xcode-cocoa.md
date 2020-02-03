@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "코코아 터치 프레임워크에 대해 알아보기"
+title:  "[Booster 2기] 코코아 터치 프레임워크에 대해 알아보기"
 date:   2020-01-31
 excerpt: "#boostcourse #booster #xcode"
 tag:
@@ -10,7 +10,9 @@ tag:
 comments: false
 ---
 
-[[부스트코스] iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
+[[부스트코스]iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
+
+[[부스트코스]iOS 프로그래밍 Booster 2기 활동](https://woojin-hwang.github.io/boostcourse-ios/) 글입니다.
 
 [[이전 포스트]Xcode 의 UI 중 버튼, 레이블 그리고 슬라이더 알아보기](https://woojin-hwang.github.io/xcode-ui/)
 
@@ -111,6 +113,10 @@ Foundation Kit 은 Int, String 등의 데이터 타입 및 Array, Dictionary 등
 [Bonjour](https://developer.apple.com/documentation/foundation/bonjour) 는 로컬 네트워크를 통해 통신하는 방법에 대해 다룹니다.
 
 이 외의 Founcation Kit 의 요소들에 대해서는 [Apple 개발자 문서](https://developer.apple.com/documentation/foundation) 를 참조하시기 바랍니다.
+
+---
+
+[[다음 포스트]오토레이아웃이 무엇인지 알아보고 직접 코드로 구현해보기](https://woojin-hwang.github.io/xcode-autolayout/)
 
 ---
 

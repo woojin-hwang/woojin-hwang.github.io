@@ -1,16 +1,19 @@
 ---
 layout: post
-title:  "Xcode 의 인터페이스 구성하기"
+title:  "[Booster 2기] Xcode 의 인터페이스 구성하기"
 date:   2020-01-30
 excerpt: "#boostcourse #booster #xcode"
 tag:
 - boostcourse
 - booster
 - xcode
+- swift
 comments: false
 ---
 
-[[부스트코스] iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
+[[부스트코스]iOS 프로그래밍 강좌](https://www.edwith.org/boostcourse-ios/)에 대한 정리글입니다.
+
+[[부스트코스]iOS 프로그래밍 Booster 2기 활동](https://woojin-hwang.github.io/boostcourse-ios/) 글입니다.
 
 [[이전 포스트]Xcode 의 에셋 카탈로그(Asset Catalog) 와 앱 시닝(App Thining) 알아보기](https://woojin-hwang.github.io/xcode-asset/))
 
@@ -76,7 +79,9 @@ comments: false
 
 ---
 
-스토리보드에는 **View Controller** 라는 것이 있습니다. 여기에는 지금까지 만든 버튼, 텍스트레이블, 슬라이더들이 View 로 모두 들어있습니다. 이 View Controller 는 ViewController 라는 클래스의 인스턴스입니다. 이 클래스는 ViewController.swift 소스 파일에 선언되어 있습니다. 코드는 다음과 같습니다.
+스토리보드에는 **View Controller** 라는 것이 있습니다. 여기에는 지금까지 만든 버튼, 텍스트레이블, 슬라이더들이 View 로 모두 들어있습니다. 이 View Controller 는 ViewController 라는 클래스의 인스턴스입니다. 이 클래스는 ViewController.swift 소스 파일에 선언되어 있습니다.
+
+해당 코드는 다음과 같습니다. `Swift` 언어를 사용하고 있습니다.
 
 {% highlight swift %}
 import UIKit
