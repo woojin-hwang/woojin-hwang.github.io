@@ -56,6 +56,8 @@ project: true
 
 [오토레이아웃이 무엇인지 알아보고 직접 코드 없이, 또는 코드를 사용해서 구현해보기](https://woojin-hwang.github.io/xcode-autolayout/)
 
+[iOS 의 View 이해하기](https://woojin-hwang.github.io/ios-view/)
+
 ---
 
 <figure>

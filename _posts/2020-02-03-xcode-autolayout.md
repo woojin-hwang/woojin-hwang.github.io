@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Booster 2기] 오토레이아웃이 무엇인지 알아보고 직접 코드 없이, 또는 코드를 사용해서 구현해보기"
-date:   2020-01-31
+date:   2020-02-03
 excerpt: "#boostcourse #booster #xcode #swift"
 tag:
 - boostcourse
@@ -381,6 +381,10 @@ V:[button]-10-[label]
 | <center>V</center> | <center>수직 방향입니다.</center> |
 
 Visual Format Language 에 대한 더 많은 예시는 [Apple 개발자 문서](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html#//apple_ref/doc/uid/TP40010853-CH27-SW1) 에서 찾을 수 있습니다.
+
+---
+
+[[다음 포스트]iOS 의 View 이해하기](https://woojin-hwang.github.io/ios-view/)
 
 ---
 
