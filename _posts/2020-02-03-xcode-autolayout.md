@@ -165,7 +165,23 @@ B.Leading = 1.0 * A.Trailing + 8.0
   <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/stack.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/stack.png"></a>
 </figure>
 
+이렇게 만든 제약들을 확인하고 싶다면, 뷰 목록에서 찾으면 됩니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/view.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/view.png"></a>
+</figure>
+
+또는 우측에 사이즈 인스펙터에서 찾을 수도 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/inspector.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/inspector.png"></a>
+</figure>
+
+> 여기서 Edit 를 눌러 제약을 수정할 수도 있습니다.
+
 ## 코드로 오토레이아웃 구현하기
+
+이번에는 직접 코드를 이용하여 오토레이아웃을 구현해 보도록 하겠습니다.
 
 ---
 
