@@ -2,7 +2,7 @@
 layout: post
 title:  "[Booster 2기] Xcode 의 인터페이스 구성하기"
 date:   2020-01-30
-excerpt: "#boostcourse #booster #xcode"
+excerpt: "#boostcourse #booster #xcode #swift"
 tag:
 - boostcourse
 - booster

@@ -2,11 +2,12 @@
 layout: post
 title:  "[Booster 2기] iOS 프로그래밍 Booster 2기 활동"
 date:   2020-01-28
-excerpt: "#boostcourse #booster #ios"
+excerpt: "#boostcourse #booster #ios #swift"
 tag:
 - boostcourse
 - booster
 - ios
+- swift
 comments: false
 project: true
 ---
@@ -53,7 +54,7 @@ project: true
 
 [코코아 터치 프레임워크에 대해 알아보기](https://woojin-hwang.github.io/xcode-cocoa/)
 
-[오토레이아웃이 무엇인지 알아보고 직접 코드로 구현해보기](https://woojin-hwang.github.io/xcode-autolayout/)
+[오토레이아웃이 무엇인지 알아보고 직접 코드 없이, 또는 코드를 사용해서 구현해보기](https://woojin-hwang.github.io/xcode-autolayout/)
 
 ---
 

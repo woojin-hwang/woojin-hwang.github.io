@@ -116,7 +116,7 @@ Foundation Kit 은 Int, String 등의 데이터 타입 및 Array, Dictionary 등
 
 ---
 
-[[다음 포스트]오토레이아웃이 무엇인지 알아보고 직접 코드로 구현해보기](https://woojin-hwang.github.io/xcode-autolayout/)
+[[다음 포스트]오토레이아웃이 무엇인지 알아보고 직접 코드 없이, 또는 코드를 사용해서 구현해보기](https://woojin-hwang.github.io/xcode-autolayout/)
 
 ---
 

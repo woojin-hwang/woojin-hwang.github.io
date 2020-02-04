@@ -2,11 +2,12 @@
 layout: post
 title:  "[Booster 2기] 오토레이아웃이 무엇인지 알아보고 직접 코드 없이, 또는 코드를 사용해서 구현해보기"
 date:   2020-01-31
-excerpt: "#boostcourse #booster #xcode"
+excerpt: "#boostcourse #booster #xcode #swift"
 tag:
 - boostcourse
 - booster
 - xcode
+- swift
 comments: false
 ---
 
@@ -181,7 +182,205 @@ B.Leading = 1.0 * A.Trailing + 8.0
 
 ## 코드로 오토레이아웃 구현하기
 
-이번에는 직접 코드를 이용하여 오토레이아웃을 구현해 보도록 하겠습니다.
+이번에는 직접 코드를 이용하여 오토레이아웃을 구현해 보도록 하겠습니다. 저는 다음과 같이 버튼과 레이블을 생성해서 시작하도록 하겠습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/interface.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/interface.png"></a>
+</figure>
+
+ViewController.swift 파일에서 @IBOulet 을 통해 버튼과 레이블을 생성한 후 뷰와 연결해줍니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/iboutlet.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/iboutlet.png"></a>
+</figure>
+
+### 앵커(Anchor) 를 통해서 오토레이아웃 구현하기
+
+먼저 **앵커(Anchor)**를 통해서 버튼과 레이블을 배치해보도록 하겠습니다. 먼저 오토레이아웃과 기존의 오토리사이징 마스크가 충돌하는 것을 막기 위해 다음 코드를 추가합니다.
+
+{% highlight swift %}
+button.translatesAutoresizingMastIntoConstraints = false
+{% endhighlight %}
+
+버튼을 중앙에 배치하기 위해 버튼의 수평과 수직 앵커를 뷰 컨트롤러의 뷰의 중앙에 기준을 맞춰 주도록 하겠습니다. 이를 위해 다음 제약을 생성합니다.
+
+{% highlight swift %}
+var constraintX: NSLayoutConstraint
+constraintX = button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+
+var constraintY: NSLayoutConstraint
+constraintY = button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+{% endhighlight %}
+
+> NSLayoutConstraint 는 레이아웃 제약에 대한 앵커 프로퍼티입니다.
+
+생성된 제약을 적용하려면 isActive 프로퍼티를 사용하면 됩니다.
+
+{% highlight swift %}
+constraintX.isActive = true
+constrainY.isActive = true
+{% endhighlight %}
+
+레이블도 버튼과 똑같이 중앙에 배치해보도록 하겠습니다. 이를 적용한 전체 코드는 다음과 같습니다.
+
+{% highlight swift %}
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var label: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        var constraintX: NSLayoutConstraint
+        constraintX = button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        
+        var constraintY: NSLayoutConstraint
+        constraintY = button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        
+        constraintX.isActive = true
+        constraintY.isActive = true
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        var buttonConstraintX: NSLayoutConstraint
+        buttonConstraintX = label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        
+        var buttonConstraintY: NSLayoutConstraint
+        buttonConstraintY = label.centerYAnchor.constraint(equalTo: button.topAnchor, constant: -10)
+        
+        buttonConstraintX.isActive = true
+        buttonConstraintY.isActive = true
+    }
+    
+}
+{% endhighlight %}
+> 레이블의 y 좌표는 버튼의 topAnchor 로부터 10 만큼 위에 있도록 설정하였습니다.
+
+그러면 다음과 같은 결과를 얻을 수 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/result.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/result.png"></a>
+</figure>
+
+Xcode 는 자동완성을 통해 코드로 어떤 제약을 설정할 수 있는지 보여줍니다. 다음과 같이 매개변수를 통해 제약의 위치를 얼마만큼으로 할 것인지, 몇 배로 할 것인지 등을 설정할 수 있습니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/constraints.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/constraints.png"></a>
+</figure>
+
+지금까지 NSLayoutConstraint 앵커를 통해 코드로 제약을 생성하여 오토레이아웃을 구현해 보았습니다. 이 외에도 NSLayoutXAxisAnchor 와 같은 여러 프로퍼티들이 있습니다. 이에 대해서는 [Apple 개발자 문서](https://developer.apple.com/documentation/uikit/view_layout) 를 참조하시기 바랍니다.
+
+### 인스턴스로 오토레이아웃 구현하기
+
+이번에는 앵커가 아닌, NSLayoutConstraint 인스턴스를 통해서 오토레이아웃을 구현해 보도록 하겠습니다. NSLayoutConstraint 는 다음과 같이 사용합니다.
+
+<figure>
+  <a href="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/nsconstraints.png"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/xcode-autolayout/nsconstraints.png"></a>
+</figure>
+ 
+매개변수가 굉장히 많은것을 알 수 있는데, 이제 하나씩 알아보도록 하겠습니다.
+
+**item** 은 제약을 받기 위한 뷰를 말합니다. 만약 button 에 제약을 추가하는 경우라면 *item: button* 이 값으로 들어가게 됩니다.
+
+**attribute** 는 제약 조건의 속성을 말합니다. *.left, .right, .top, .bottom, .leading, .trailing, .width, .height* 등의 값이 들어갈 수 있습니다.
+
+**relatedBy** 는 제약 조건을 받는 뷰 사이의 관계를 정의합니다. 즉 제약을 특정 값으로 설정하거나, 최소 또는 최대의 범위를 정할 수 있습니다. *.equal, .lessThanOrEqual, .greaterThanOrEqual* 등의 값이 들어갈 수 있습니다.
+
+**toItem** 은 *item* 의 제약을 받는 뷰를 말합니다. button 과 label 사이에 제약을 만드는 경우, *item 을 button 으로, toItem 을 label 으로* 설정할 수 있습니다. 오직 하나의 뷰의 제약을 만드는 경우, nil 값이 들어갈 수도 있습니다.
+
+**multiplier** 는 크기나 위치를 비율로 설정하고자 할 때 사용합니다.
+
+**constraint** 는 크기나 위치를 상수값으로 설정하고자 할 때 사용합니다.
+
+이 매개변수들을 이용해서 원하는 제약을 생성할 수 있습니다. 한번 만들어보도록 하겠습니다.
+
+다음은 버튼의 너비를 50보다 크거나 같도록 설정하는 코드입니다.
+
+{% highlight swift %}
+var constantWidthButton: NSLayoutConstraint
+constraintWidthButton = NSLayoutConstraint(item: button,
+                     attribute: .width,
+                     relatedBy: .greaterThanOrEqual,
+                     toItem: nil,
+                     attribute: .notAnAttribute,
+                     multiplier: 1.0,
+                     constant: 50.0)
+{% endhighlight %}
+
+다음 코드는 레이블의 너비를 버튼과 같게 만드는 코드입니다.
+
+{% highlight swift %}
+var constraintWidthLabel: NSLayoutConstraint
+constraintWidthLabel = NSLayoutConstraint(item: button,
+ 			  attribute: .width,
+ 			  relatedBy: .equal,
+ 			  toItem: label,
+ 			  attribute: .width,
+ 			  multiplier: 1.0,
+ 			  constant: 0.0)
+{% endhighlight %}
+
+버튼과 레이블 사이의 간격을 설정할 수도 있습니다. 여기서는 10 으로 주도록 하겠습니다.
+
+{% highlight swift %}
+var constraintMarginButtonWidth: NSLayoutConstraint
+constraintMarginButtonWidth = NSLayoutConstraint(item: topField,
+ 			  attribute: .bottom,
+ 			  relatedBy: .equal,
+ 			  toItem: bottomField,
+ 			  attribute: .top,
+ 			  multiplier: 1.0,
+ 			  constant: -10.0)
+{% endhighlight %}
+
+이 인스턴스에 우선도를 부여할 수 있습니다. 방법은 다음과 같습니다.
+
+{% highlight swift %}
+NSLayoutConstraint(item: topField,
+ 			  attribute: .bottom,
+ 			  relatedBy: .equal,
+ 			  toItem: bottomField,
+ 			  attribute: .top,
+ 			  multiplier: 1.0,
+ 			  constant: -10.0).priority = UILayoutPriority(rawValue: 20)
+{% endhighlight %}
+
+우선도는 1 에서 1000 까지의 값을 가질 수 있으며, 두개 이상의 제약이 있다면 그 중 우선도가 높은 제약이 수행됩니다.
+
+### Visual Format Language 를 통해 오토레이아웃 구현하기
+
+이번에는 동일한 제약을 Visual Format Language 를 통해 구현해 보겠습니다. Visual Format Language 는 인스턴스처럼 매개변수로 값을 넘기는 것이 아닌, 특정한 형식에 맞춰서 간단하게 오토레이아웃을 구현할 수 있습니다. 예를 들어 버튼의 너비를 50보다 크거나 같도록 설정하는 코드는 아래와 같이 한 줄로 표현할 수 있습니다.
+
+{% highlight swift %}
+H:[button(>=50)]
+{% endhighlight %}
+
+버튼과 레이블 사이의 간격을 10으로 설정하는 방법은 다음과 같습니다.
+
+{% highlight swift %}
+V:[button]-10-[label]
+{% endhighlight %}
+
+이렇게 제약을 간단하고 쉽게 나타낼 수 있습니다. Visual Format Language 를 잘 사용하기 위해서는 여기에 사용되는 기호와 문자열을 알아야 할 필요가 있습니다. 이에 대해서는 아래의 표를 참조하시기 바랍니다.
+
+| <center>기호 및 문자열</center> | <center>설명</center> |
+|:--------|:--------:|
+| <center>|</center> | <center>슈퍼뷰를 의미합니다.</center> |
+| <center>-</center> | <center>표준 간격입니다. (8포인트)</center> |
+| <center>==</center> | <center>같은 너비입니다.</center> |
+| <center>-10-</center> | <center>사이의 간격이 10포인트 입니다.</center> |
+| <center><=50</center> | <center>50보다 작거나 같습니다.</center> |
+| <center>>=50</center> | <center>50보다 크거나 같습니다.</center> |
+| <center>@750</center> | <center>우선도를 750으로 지정합니다.</center> |
+| <center>H</center> | <center>수평 방향입니다.</center> |
+| <center>V</center> | <center>수직 방향입니다.</center> |
+
+Visual Format Language 에 대한 더 많은 예시는 [Apple 개발자 문서](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html#//apple_ref/doc/uid/TP40010853-CH27-SW1) 에서 찾을 수 있습니다.
 
 ---
 
