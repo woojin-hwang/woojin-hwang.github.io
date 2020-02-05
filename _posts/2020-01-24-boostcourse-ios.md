@@ -58,6 +58,8 @@ project: true
 
 [iOS 의 View 이해하기](https://woojin-hwang.github.io/ios-view/)
 
+[iOS 의 디자인패턴, MVC 에 대해 간단하게 알아보기](https://woojin-hwang.github.io/mvc/)
+
 ---
 
 <figure>
