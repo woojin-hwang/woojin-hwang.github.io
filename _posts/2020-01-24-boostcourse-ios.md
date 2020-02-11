@@ -60,7 +60,7 @@ project: true
 
 [iOS 의 디자인패턴, MVC 에 대해 간단하게 알아보기](https://woojin-hwang.github.io/mvc/)
 
-[내비게이션 인터페이스에 대해 알아보고 직접 구현해보기](https://woojin-hwang.github.io/navigation-interface)
+[내비게이션 인터페이스에 대해 알아보고 직접 구현해보기](https://woojin-hwang.github.io/navigation-interface/)
 
 [모달 알아보기](https://woojin-hwang.github.io/modal/)
 

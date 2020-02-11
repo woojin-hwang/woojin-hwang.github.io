@@ -190,7 +190,7 @@ View Controller 를 스토리보드로 가져옵니다. 그러면 다음과 같�
 
 ---
 
-[[다음 포스트]모달 알아보기](https://woojin-hwang.github.io/modal/)
+[[다음 포스트] 모달 알아보기](https://woojin-hwang.github.io/modal/)
 
 ---
 
