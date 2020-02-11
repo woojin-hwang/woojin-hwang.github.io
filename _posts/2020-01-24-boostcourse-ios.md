@@ -62,6 +62,8 @@ project: true
 
 [내비게이션 인터페이스에 대해 알아보고 직접 구현해보기](https://woojin-hwang.github.io/navigation-interface)
 
+[모달 알아보기](https://woojin-hwang.github.io/modal/)
+
 ---
 
 <figure>
