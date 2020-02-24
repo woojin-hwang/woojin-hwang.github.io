@@ -64,6 +64,8 @@ project: true
 
 [모달 알아보기](https://woojin-hwang.github.io/modal/)
 
+[뷰의 상태변화를 감지하는 메서드 알아보기](https://woojin-hwang.github.io/view-behavior/)
+
 ---
 
 ## Code Review
