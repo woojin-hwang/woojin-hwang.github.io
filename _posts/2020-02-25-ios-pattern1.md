@@ -96,13 +96,11 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
 
 이 코드를 자세히 살펴보면 개발자 문서에서 서술한 imagePickerController 메서드와 imagePickerControllerDidCancel 메서드가 그대로 사용된 것을 볼 수 있습니다. 여기에 사용된 패턴이 바로 **델리게이션 패턴**입니다. ViewController.swift 에서 선언한 imagePicker 프로퍼티가 UIImagePickerControllerDelegate 로부터 위임을 받아 동일한 기능을 수행하도록 합니다. 어플리케이션 실행시 정상적으로 동작하는 것을 확인할 수 있습니다.
 
-{% highlight html %}
 <figure class="third">
 	<img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/ios-pattern/app1.png">
 	<img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/ios-pattern/app2.png">
 	<img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/ios-pattern/app3.png">
 </figure>
-{% endhighlight %}
 
 ---
 
