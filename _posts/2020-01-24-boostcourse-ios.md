@@ -66,6 +66,8 @@ project: true
 
 [뷰의 상태변화를 감지하는 메서드 알아보기](https://woojin-hwang.github.io/view-behavior/)
 
+[iOS 의 다양한 디자인 패턴 알아보기 1](https://woojin-hwang.github.io/ios-pattern1/)
+
 ---
 
 ## Code Review

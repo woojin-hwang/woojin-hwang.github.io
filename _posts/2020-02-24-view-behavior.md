@@ -221,7 +221,7 @@ ViewController 에서 viewWillDisappear 메서드와 viewDidDisappear 메서드�
 
 ---
 
-[[다음 포스트]iOS 의 다양한 디자인 패턴 알아보기](https://woojin-hwang.github.io/ios-pattern/)
+[[다음 포스트]iOS 의 다양한 디자인 패턴 알아보기 1](https://woojin-hwang.github.io/ios-pattern1/)
 
 ---
 
