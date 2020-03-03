@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Booster 2기] iOS 의 다양한 디자인 패턴 알아보기 2"
-date:   2020-02-25
+date:   2020-02-26
 excerpt: "#boostcourse #booster #xcode #swift"
 tag:
 - boostcourse
