@@ -70,6 +70,8 @@ project: true
 
 [iOS 의 다양한 디자인 패턴 알아보기 2](https://woojin-hwang.github.io/ios-pattern2/)
 
+[iOS 의 다양한 디자인 패턴 알아보기 3](https://woojin-hwang.github.io/ios-pattern3/)
+
 ---
 
 ## Code Review

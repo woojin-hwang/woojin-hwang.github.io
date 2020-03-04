@@ -81,6 +81,10 @@ UserInformation 이라는 이름의 클래스를 선언하였습니다. 내부�
 
 ---
 
+[[다음 포스트]iOS 의 다양한 디자인 패턴 알아보기 2](https://woojin-hwang.github.io/ios-pattern2/)
+
+---
+
 <figure>
   <a href="https://woojin-hwang.github.io/boostcourse-ios/"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.jpg"></a>
 </figure>
