@@ -72,6 +72,8 @@ project: true
 
 [iOS 의 다양한 디자인 패턴 알아보기 3](https://woojin-hwang.github.io/ios-pattern3/)
 
+[iOS 가 사용자의 제스쳐를 인식하는 방법](https://woojin-hwang.github.io/gesture/)
+
 ---
 
 ## Code Review

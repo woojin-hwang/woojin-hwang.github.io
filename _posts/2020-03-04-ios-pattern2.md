@@ -61,6 +61,10 @@ button.addTarget(self, action: #selector(self.touchUpPlayPauseButton(_:)), for: 
 
 ---
 
+[[다음 포스트]iOS 가 사용자의 제스쳐를 인식하는 방법](https://woojin-hwang.github.io/gesture/)
+
+---
+
 <figure>
   <a href="https://woojin-hwang.github.io/boostcourse-ios/"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.jpg"></a>
 </figure>
