@@ -127,6 +127,10 @@ iOS 를 사용해본 적이 있다면 이는 매우 익숙한 모습입니다. �
 
 ---
 
+[[다음 포스트]iOS 테이블뷰 직접 구현해보기](https://woojin-hwang.github.io/table-view2/)
+
+---
+
 <figure>
   <a href="https://woojin-hwang.github.io/boostcourse-ios/"><img src="https://raw.githubusercontent.com/woojin-hwang/woojin-hwang.github.io/master/_posts/img/boostcourse/tag.jpg"></a>
 </figure>
