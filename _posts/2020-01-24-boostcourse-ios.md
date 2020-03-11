@@ -84,6 +84,8 @@ project: true
 
 [iOS 프로그래밍 첫번째 프로젝트 코드 리뷰 후기](https://woojin-hwang.github.io/ios-review)
 
+[iOS 프로그래밍 두번째 프로젝트 코드 리뷰 후기](https://woojin-hwang.github.io/ios-review2)
+
 ---
 
 <figure>
